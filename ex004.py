@@ -1,0 +1,20 @@
+cor = {'traço': '\033[35m', 'ex': '\033[4;31m', 'título': '\033[1;34m', 'str': '\033[1;33m', 'reset': '\033[m'}
+print('{}-=-{}'.format(cor['traço'], cor['reset'])*18, '{} Exercício 004  {}'.format(cor['ex'], cor['reset']),
+      '{}-=-{}'.format(cor['traço'], cor['reset'])*18)
+print('{}Faça um programa que leia algo pelo teclado e mostre na tela seu tipo primitivo e todas as informações '
+      'possíveis sobre ele.{}'.format(cor['título'], cor['reset']))
+print('{}-=-{}'.format(cor['traço'], cor['reset'])*42)
+palavra = input('Digite algo: ')
+print('O tipo primitivo do valor {}{}{} é'.format(cor['str'], palavra, cor['reset']), type(palavra))
+print('Ele é alfabético? ', palavra.isalpha())
+print('Ele possui letras minúsculas? ', palavra.islower())
+print('Ele possui letras maiúsculas? ', palavra.isupper())
+print('Ela está capitalizada? ', palavra.istitle())
+print('Ele é alfanumérico? ', palavra.isalnum())
+print('É um número? ', palavra.isnumeric())
+print('Ele é um decimal? ', palavra.isdecimal())
+print('Ele possui espaços? ', palavra.isspace())
+print('Ele possui símbolos? ', palavra.isdigit())
+print(palavra.isidentifier())
+print(palavra.isprintable())
+print(palavra.isascii())
